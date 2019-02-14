@@ -9,5 +9,5 @@ fi
 IFS=#
 while read url fileName
 do
-    wget -c -O albums/${fileName//[^A-Za-z0-9._-]/_}.zip "$url"
+    wget --append-output download.log -c -O albums/${fileName//[^A-Za-z0-9._-]/_}.zip "$url"
 done < download_list
