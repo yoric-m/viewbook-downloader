@@ -7,7 +7,7 @@ sleep 1
 echo "Cookies formated"
 
 # Get the html containing albums ids and keys
-wget -o log -O file --load-cookies cookies https://app.viewbook.com/albums/?sort=date&order=desc&page=1&per_page=500
+wget -o log -O file --load-cookies cookies "https://app.viewbook.com/albums/?sort=date&order=desc&page=1&per_page=1000"
 
 # We make sure the file is finished downloading before continuing
 oldline=-1
